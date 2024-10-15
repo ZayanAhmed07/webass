@@ -1,7 +1,10 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -22,29 +25,29 @@ p {
 
 /* Navigation Bar */
 .navbar {
-    background-color:#f0f0f0;
+    background-color:#fffefe;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     color: white;
+    height: 155px;
 }
 .menu{
-    background-color: #1a5e92;
-
-    display: flex;
+    background-color: #285e83;
+display: flex;
     position:absolute;
     top: 130px;
-    left: 20%;
- justify-content: space-between;
+    width: 1050px;
+    height: 74px;
+    left: 240px;
+ justify-content: center;
     align-items: center;
-    padding: 7px;
     color: white;
-    font-size: small;
+    font-size: medium;
 }
 
 .caliber{
-    color: #1a5e92;
+    color: #285e83;
     font-style:oblique;
     margin-left: 280px;
 }
@@ -59,12 +62,16 @@ p {
 }
 
 .logo{
-    
+    margin-left: 250px;
+    margin-bottom: 10px;
 }
 /* Call Now Section */
 .call-now {
+    display: flex;
+    align-items: center;
     text-align: right;
-    margin-right: 20px;
+    gap: 10px;
+    margin-right: 220px;
     font-weight: bold;
     font-size: 1.2em;
     color: #ff3a1e; /* Bold red color for emphasis */
@@ -73,8 +80,9 @@ p {
 
 .call-now p:first-child {
     font-size: 1.5em; /* Slightly larger for "Call Now!" text */
-    color: #000; /* Black for the "Call Now!" text */
+    color: #285e83; /* Black for the "Call Now!" text */
     margin-bottom: 5px;
+    font-style: italic;
 }
 
 .call-now p:nth-child(2) {
@@ -92,42 +100,54 @@ p {
 }
 
 .navbar .menu ul li {
-    padding: 10px 20px;
+    padding: 10px 25px;
 }
 
 .navbar .call-now p {
     text-align: right;
 }
-
 /* Hero Section */
 .hero img {
     width: 100%;
-    height: 300px;
+    height: 640px;
     object-fit: cover;
 }
 
 /* Services Section */
 .services {
-    padding: 30px;
-   
-    color: #1a5e92;
+    padding: 10px;
+    color: #285e83;
+}
+.services h2{
+    font-size: large;
+
 }
 
 .service-cards {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 10px 100px;
+    transform: translateY(-40px);
+    
 }
 
 .service-card {
-    width: 30%;
-    padding: 10px;
+    
+    width: 60%;
+    padding: 30px;
+    text-align: center;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0);
+    
 }
-.abc{
-    width: 70px; height: 70px;position: relative;border-radius: 40px;background-color: #1a5e92;
+.service-card p{
+    text-align: left;
+    font-size: medium;
+    font-family: "Open Sans", sans-serif;
+    color: #36698b;
+    font-size: 14px;
 }
+
 
 /* Professional Locksmith Section */
 .locksmith-info {
@@ -142,7 +162,7 @@ p {
 }
 
 .locksmith-service {
-    background-color: #1a5e92;
+    background-color: #285e83;
     color: white;
     padding: 10px;
     width: 20%;
@@ -192,5 +212,5 @@ footer p {
     margin-top: 20px;
 }
 border{
-    background-color: #1a5e92;
+    background-color: #285e83;
 }
