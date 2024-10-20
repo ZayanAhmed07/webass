@@ -117,7 +117,42 @@ display: flex;
 .services {
     padding: 10px;
     color: #285e83;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  /* padding: ; *alignment */
+  
 }
+.service-heading{
+    color: #285e83;
+    font-size: 40px;
+    font-weight: 400;
+    
+}
+.service-image{
+    background-color: #285e83;
+    width: 50px;
+    height:50px;
+    padding: 40px;
+    border-radius: 50%; 
+    margin: 50px;
+    
+ 
+}
+
+.ist,.second,.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    
+ 
+}
+
+
+
 .services h2{
     font-size: large;
 
@@ -172,24 +207,52 @@ display: flex;
 
 /* Professional Locksmith Section */
 .locksmith-info {
-    padding: 20px;
-    text-align: center;
+   display: flex;
+   justify-content: space-between;
+   
+   align-items: start;
 }
-
-.locksmith-services {
+.locksmith-div{
+    width: 40%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin-left:100px;
+    color: #285e83;
+}
+.lock-para{
+    justify-self: start ; 
+}
+.ec,.hs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:start;
+   
+}
+.lock-flex{
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 10px;
+   
+    padding: 25px;
+}
+.lock-image
+{
+    width: 50%;
+}
+.emergency ,.cameras{
+       font-size: 25px;
+       
+       font-weight: 200;
+      padding-left: 5px;
+    padding-right: 85px;
+    border-left: red 4px solid;
+    
 }
 
-.locksmith-service {
-    background-color: #285e83;
-    color: white;
-    padding: 10px;
-    width: 20%;
-    text-align: center;
-    border-radius: 5px;
-}
+
 
 /* Clients and Testimonials Section */
 .clients-testimonials {
