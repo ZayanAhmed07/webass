@@ -126,26 +126,47 @@ display: flex;
 .service-cards {
     display: flex;
     justify-content: space-around;
-    padding: 10px 100px;
-    transform: translateY(-40px);
+
+   
     
 }
 
 .service-card {
-    
-    width: 60%;
-    padding: 30px;
+    background-color: #285e83;
+    border-radius: 50%; /* Ensures the card is a perfect circle */
+    width: 156px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0);
-    
+    position: relative;
 }
+.service-card img {
+    max-width: 60%;
+    max-height: 60%;
+    display: block;
+    margin: auto;
+}
+
+.service-card h2 {
+    font-size: 1em;
+    color:#285e83;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
 .service-card p{
     text-align: left;
     font-size: medium;
     font-family: "Open Sans", sans-serif;
     color: #36698b;
     font-size: 14px;
+    padding-top: 100px;
 }
 
 
