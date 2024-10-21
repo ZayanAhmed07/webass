@@ -188,7 +188,7 @@ justify-content: center;
 
 .locksmith-text {
   width: 50%;
-  padding: 20px;
+  padding: 70px;
   font-family: 'Open Sans', sans-serif;
   color: #285e83;
   z-index: 2; /* Ensure text appears on top */
@@ -384,7 +384,7 @@ justify-content: center;
 footer {
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: px 0;
   text-align: center;
 }
 
@@ -452,6 +452,16 @@ footer p {
   margin-top: 20px;
   font-size: 0.9em;
 }
+.copyright-section {
+  background-color: #285e83; /* Blue background */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0;
+}
 
 /* Add this to your existing CSS file */
 .container {
@@ -459,3 +469,4 @@ footer p {
   margin: 0 auto; /* Centers the container */
   /* padding: 0 20px; Optional: Adds some padding for better appearance */
 }
+
