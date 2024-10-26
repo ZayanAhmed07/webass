@@ -1,12 +1,19 @@
 /* General Styles */
-body {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-   margin: 0;
+*{
+  margin: 0;
   padding: 0;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+html{
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 h2, h3 {
@@ -24,6 +31,9 @@ p {
 }
 
 /* Navigation Bar */
+header{
+  height: 200px;
+}
 .navbar {
   background-color:#fffefe;
   display: flex;
@@ -32,34 +42,7 @@ p {
   color: white;
   height: 155px;
 }
-.menu{
-  background-color: #285e83;
-display: flex;
-  position:absolute;
-  top: 130px;
-  width: 1050px;
-  height: 74px;
-  left: 240px;
-justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: medium;
-}
 
-.caliber{
-  color: #285e83;
-  font-style:oblique;
-  margin-left: 280px;
-}
-.locksmith{
-  color: #000;
-  margin-left: 285px;
-}
-.navbarkey{
-  height: 70px;
-  width: 70px;
-  margin-left: 280px;
-}
 
 .logo{
   margin-left: 250px;
@@ -83,41 +66,66 @@ justify-content: center;
   color: #285e83; /* Black for the "Call Now!" text */
   margin-bottom: 5px;
   font-style: italic;
+  margin-left: 250px;
 }
 
 .call-now p:nth-child(2) {
   font-size: 1.1em; /* Phone numbers slightly smaller */
 }
-
-.navbar .logo h2 {
-  margin: 0;
+.menu{
+  background-color: #285e83;
+  display: flex;
+  position:relative;
+  width: 75%;
+  height: 74px;
+ justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: medium;
+  margin-left: 13.5%;
+  margin-bottom: 300px;
 }
-
-.navbar .menu ul {
+ .menu ul {
   list-style: none;
   display: flex;
   gap: 15px;
 }
 
-.navbar .menu ul li {
-  padding: 10px 25px;
+ .menu ul li {
+  padding: 10px 45px;
+ 
+  font-size: large;
 }
 
-.navbar .call-now p {
+.call-now p {
   text-align: right;
 }
-/* Hero Section */
-.hero img {
-  width: 100%;
+.abc{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+ .hero img {
   height: 640px;
   object-fit: cover;
+  width: 100%;
 }
 
 /*Services*/
 .serviceheading-main{
   text-align: center;
   color: #285e83;
-  font-size: 2rem;
+  font-size: 0.556in;
+  margin-top: 5%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+
 }
 .service-all {
   display: flex;
@@ -242,13 +250,6 @@ justify-content: center;
   background-size: cover;
   background-position: center;
 }
-
-
-
-
-
-
-
 
 /* Clients and Testimonials Section */
 .clients-testimonials {
@@ -465,8 +466,229 @@ footer p {
 
 /* Add this to your existing CSS file */
 .container {
-  max-width: 1500px;
-  margin: 0 auto; /* Centers the container */
-  /* padding: 0 20px; Optional: Adds some padding for better appearance */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
+@media (max-width: 320px) {
+
+  /* Navigation Bar */
+  .navbar {
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .navbar .menu ul li {
+    padding: 10px 0px;
+  }
+  
+
+  .logo {
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+
+  .menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .menu ul li {
+    font-size: 0.9em;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .call-now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .call-now p:first-child {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .call-now p:nth-child(2) {
+    font-size: 0.8em;
+    line-height: 1.2;
+  }
+
+  /* Hero Section */
+  /* .hero img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  } */
+
+  /* Services Section */
+  .serviceheading-main {
+    font-size: 1.5rem;
+  }
+
+  .service-all {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .commercial {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .img-holder {
+    width: 120px;
+    height: 120px;
+  }
+
+  .img-holder img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .txt-holder h3 {
+    font-size: 1.1em;
+  }
+
+  .txt-holder p {
+    font-size: 12px;
+  }
+
+  /* Locksmith Section */
+  .locksmith-info {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .locksmith-text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lock-text {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .lock-para {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .lock-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lock-services p {
+    font-size: 0.9em;
+    padding-left: 5px;
+  }
+
+  /* Clients and Testimonials Section */
+  .clients-testimonials {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .clients-section, .testimonials-section {
+    width: 100%;
+  }
+
+  .clients-testimonials h2 {
+    font-size: 1.5em;
+  }
+
+  .clients {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .client {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+
+  .testimonial {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+
+  .testimonial-info h4 {
+    font-size: 0.9em;
+  }
+
+  .testimonial-info p {
+    font-size: 0.7em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content div {
+    align-items: center;
+  }
+
+  .footer-content h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .footer-content ul {
+    align-items: center;
+  }
+
+  .footer-content ul li {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+  }
+
+  .social-links ul {
+    justify-content: center;
+  }
+
+  .social-links ul li {
+    margin: 0 3px;
+  }
+
+  footer p {
+    font-size: 0.7em;
+  }
+
+  .copyright-section {
+    font-size: 0.8em;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 10px;
+  }
+}
