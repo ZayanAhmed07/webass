@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding-top: 20px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-logo img {
+    width: 150px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.contact-info-call p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff3a1e;
+}
+
+.nav-bar {
+    background-color: #285e83;
+    width: 60%;
+    margin-left: 20%;
+    height: 40%;
+    margin-right: 20%;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 20%;
+    align-items: center;
+  
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+/* Main Banner */
+.main-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #2a2a2a;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.fa-solid{
+    background-color: #285e83;
+    border-radius: 70%;
+}
+
+.service {
+    text-align: center;
+    width: 250px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #285e83;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.service p {
+    font-size: 14px;
+    color: #285e83;
+    text-align: left;
+}
+
+/* Expertise Section */
+/* Expertise Section with Background Image */
+.expertise {
+    background-image: url("/images/locksmith.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Make text stand out against background */
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.expertise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.expertise h2, .expertise p, .expertise-list {
+    position: relative;
+    z-index: 2;
+}
+
+.expertise h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.expertise p {
+    font-size: 16px;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.expertise-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.expertise-list span {
+    background-color: #ff3a1e;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Clients and Testimonials */
+.clients-testimonials {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.clients-section, .testimonials-section {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients-section h2, .testimonials-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #285e83;
+    text-align: center;
+    position: relative;
+}
+
+.clients-section h2::after, .testimonials-section h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ff3a1e;
+    margin: 10px auto;
+}
+
+/* Clients Section */
+.clients {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+.client {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    width: 100%;
+    max-width: 150px;
+}
+
+.client img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.client p {
+    font-size: 1em;
+    font-weight: 500;
+    color: #285e83;
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.testimonial {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.testimonial-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #285e83;
+}
+
+.rating {
+    color: gold;
+    font-size: 18px;
+}
+
+/* Navigation Buttons for Testimonials */
+.testimonial-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonial-navigation button {
+    background-color: #285e83;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-navigation button:hover {
+    background-color: #1e4a60;
+}
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.social-links ul {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links ul li a img {
+    width: 30px;
+    height: auto;
+}
+
+.copyright-section {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+    padding-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Service Section */
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+    }
+    /* Expertise List */
+    .expertise {
+        padding: 30px 15px;
+    }
+    
+    .expertise h2 {
+        font-size: 24px;
+    }
+    
+    .expertise-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+    
+    .client {
+        width: 100%;
+    }
+
+    .testimonials {
+        width: 100%;
+    }
+    .clients-testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients-section, .testimonials-section {
+        width: 100%;
+    }
+
+    .clients {
+        grid-template-columns: 1fr; /* Stack clients in a single column */
+    }
+
+    .testimonials {
+        margin-top: 30px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+}
